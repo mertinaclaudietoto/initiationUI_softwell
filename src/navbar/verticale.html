@@ -1,0 +1,185 @@
+ <!-- Navigation Bar -->
+<nav class="bg-white shadow-sm border-b sticky top-0 z-10">
+    
+    <div class=" mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex   items-center justify-between p-5 border-b w-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                        </svg>
+                    </div>
+                    <span id="logoText" class="text-transition text-xl font-bold text-gray-800">Modernize</span>
+                </div>
+                <button id="toggleSidebar" class="text-gray-600 hover:text-gray-800 pl-10">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Left Section -->
+            <div class="flex items-center gap-4">
+                <!-- Hamburger Menu -->
+                <!-- <button class="text-gray-600 hover:text-gray-800 p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button> -->
+
+                <!-- Search -->
+                <!-- <button class="text-gray-600 hover:text-gray-800 p-2">
+                    <i class="fas fa-search text-xl"></i>
+                </button> -->
+
+                <!-- Apps Dropdown -->
+                <div class="relative">
+                    <button id="appsDropdown" class="flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition">
+                        <span class="font-medium">Apps</span>
+                        <i class="fas fa-chevron-down text-sm"></i>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div id="appsMenu" class="dropdown-menu hidden  absolute top-full left-0 mt-2 w-[700px] bg-white rounded-xl shadow-2xl border p-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            
+                            <!-- Left Column - Apps -->
+                            <div class="space-y-3">
+                                <!-- Chat Application -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-comment text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Chat Application</div>
+                                        <div class="text-sm text-gray-500">New messages arrived</div>
+                                    </div>
+                                </div>
+
+                                <!-- Notes App -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-note-sticky text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Notes App</div>
+                                        <div class="text-sm text-gray-500">To-do and Daily tasks</div>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Application -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-address-book text-red-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Contact Application</div>
+                                        <div class="text-sm text-gray-500">2 Unsaved Contacts</div>
+                                    </div>
+                                </div>
+
+                                <!-- Email App -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-envelope text-cyan-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Email App</div>
+                                        <div class="text-sm text-gray-500">Get new emails</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column - More Apps -->
+                            <div class="space-y-3">
+                                <!-- eCommerce App -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-shopping-cart text-gray-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">eCommerce App</div>
+                                        <div class="text-sm text-gray-500">New stock available</div>
+                                    </div>
+                                </div>
+
+                                <!-- Calendar App -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-calendar text-yellow-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Calendar App</div>
+                                        <div class="text-sm text-gray-500">Get dates</div>
+                                    </div>
+                                </div>
+
+                                <!-- Tickets App -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-ticket text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Tickets App</div>
+                                        <div class="text-sm text-gray-500">Submit tickets</div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog App -->
+                                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                    <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-blog text-teal-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Blog App</div>
+                                        <div class="text-sm text-gray-500">added new blog</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="mt-6 pt-6 border-t flex items-center justify-between">
+                            <div class="flex items-center gap-2 text-gray-700">
+                                <i class="fas fa-circle-question"></i>
+                                <span class="font-medium">Frequently Asked Questions</span>
+                            </div>
+                            <button class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-medium">
+                                Check
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat -->
+                <a href="#" class="px-4 py-2 text-gray-700 hover:text-gray-900 font-medium">Chat</a>
+
+                <!-- Calendar -->
+                <a href="#" class="px-4 py-2 text-gray-700 hover:text-gray-900 font-medium">Calendar</a>
+
+                <!-- Email -->
+                <a href="#" class="px-4 py-2 text-gray-700 hover:text-gray-900 font-medium">Email</a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="flex items-center gap-3">
+                <!-- Dark Mode Toggle -->
+                <button class="p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition">
+                    <i class="fas fa-moon text-xl"></i>
+                </button>
+
+                <!-- Language -->
+                <button class="p-2 hover:bg-gray-100 rounded-lg transition">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="w-6 h-6 rounded">
+                </button>
+
+                <!-- Notifications -->
+                <button class="p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition relative">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-blue-500 rounded-full"></span>
+                </button>
+
+                <!-- User Profile -->
+                <button class="flex items-center gap-2 hover:bg-gray-100 rounded-lg p-1 transition">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="User" class="w-8 h-8 rounded-full">
+                </button>
+            </div>
+
+        </div>
+    </div>
+</nav>

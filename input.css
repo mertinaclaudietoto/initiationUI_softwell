@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 340px;
+  --breakpoint-md: 540px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1180px;
+
+  --color-orange: #ffb6c1;
+  --color-green: #ffd700;
+  --color-blue: #00ced1;
+  --color-soft-blue: #2e427b;
+  --color-gold: #e1c340;
+
+  /* Shades */
+  --color-soft-blue-shade-12: #090c17;
+  --color-soft-blue-shade-11: #0e1425;
+  --color-soft-blue-shade-10: #131c34;
+  --color-soft-blue-shade-9:  #192342;
+  --color-soft-blue-shade-8:  #1e2b50;
+  --color-soft-blue-shade-7:  #23335e;
+  --color-soft-blue-shade-6:  #293a6d;
+  --color-soft-blue-shade-5:  #2e427b;
+  --color-soft-blue-shade-4:  #334a89;
+  --color-soft-blue-shade-3:  #395198;
+  --color-soft-blue-shade-2:  #3e59a6;
+  --color-soft-blue-shade-1:  #4361b4;
+
+  /* Tints */
+  --color-soft-blue-tint-12: #4e6bbd;
+  --color-soft-blue-tint-11: #5c77c2;
+  --color-soft-blue-tint-10: #6b83c8;
+  --color-soft-blue-tint-9:  #798fcd;
+  --color-soft-blue-tint-8:  #879bd2;
+  --color-soft-blue-tint-7:  #96a7d8;
+  --color-soft-blue-tint-6:  #a4b3dd;
+  --color-soft-blue-tint-5:  #b2bfe2;
+  --color-soft-blue-tint-4:  #c0cbe8;
+  --color-soft-blue-tint-3:  #cfd7ed;
+  --color-soft-blue-tint-2:  #dde2f2;
+  --color-soft-blue-tint-1:  #ebeef8;
+  --color-soft-blue-tint-13: #fafafd;
+}
+.sidebar-transition {
+    transition: width 0.3s ease;
+}
+.text-transition {
+    transition: opacity 0.3s ease;
+}
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.menu-icone{
+    @apply  w-5 text-gray-100
+}

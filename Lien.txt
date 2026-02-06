@@ -1,0 +1,1 @@
+https://modernize-tailwind-nextjs-main.vercel.app/apps/invoice/detail/PineappleInc
